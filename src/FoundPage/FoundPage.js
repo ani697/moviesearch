@@ -21,7 +21,7 @@ class FoundPage extends Component{
   render(){
     console.log(this.props.match.params.Title)
 //    const Address = 'http://www.omdbapi.com/?i=tt'+this.props.match.params.Title+'&apikey=1cd359d4';
-    const Address = 'http://img.omdbapi.com/?i='+this.state.posts.imdbID+'&h=600&apikey=1cd359d4'
+    const Address = 'https://img.omdbapi.com/?i='+this.state.posts.imdbID+'&h=600&apikey=1cd359d4'
     return(
       <div className="Detail" >
         <h1>{this.state.posts.Title}</h1>

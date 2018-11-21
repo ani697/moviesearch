@@ -24,7 +24,7 @@ class SearchPage extends Component {
   }
 
   handleSubmit(event){
-    const URL = 'http://www.omdbapi.com/?t='+this.state.movie+'&apikey=1cd359d4';
+    const URL = 'https://www.omdbapi.com/?t='+this.state.movie+'&apikey=1cd359d4';
     axios.get(URL)
         .then(response => {
           if(response.data.Title !== undefined)
