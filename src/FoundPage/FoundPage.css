@@ -1,0 +1,8 @@
+.Detail{
+  width: 80%;
+  margin: 20px auto;
+  border: 3px solid #eee;
+  background-image: url(wooden.jpeg);
+  box-shadow: 0 2px 3px #ccc;
+  text-align: center;
+}

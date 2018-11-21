@@ -1,0 +1,12 @@
+.SearhPage{
+  width: 50%;
+  height: 280px;
+  margin: 90px 50px 50px 250px;
+
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  text-align: center;
+  background-image: url(flim.jpeg);
+
+
+}
