@@ -8,7 +8,7 @@ class FoundPage extends Component{
     posts:[]
   }
   componentDidMount(){
-    const URL = 'http://www.omdbapi.com/?t='+this.props.match.params.Title+'&apikey=1cd359d4';
+    const URL = 'https://www.omdbapi.com/?t='+this.props.match.params.Title+'&apikey=1cd359d4';
     axios.get(URL)
         .then(response => {
 
