@@ -7,8 +7,8 @@ class Links extends Component{
   render(){
     return(
       <div>
-        <Route exact path='/' component={SearchPage} />
-        <Route  path='/FoundPage/:Title'  component={FoundPage} />
+        <Route  path='/' exact component={SearchPage} />
+        <Route  path='/lookformovie.herokuapp.com/FoundPage/:Title'   exact component={FoundPage} />
       </div>
     );
   }
