@@ -11,17 +11,17 @@ class FoundPage extends Component{
     const URL = 'https://www.omdbapi.com/?t='+this.props.match.params.Title+'&apikey=1cd359d4';
     axios.get(URL)
         .then(response => {
-
             this.setState({posts:response.data});
-            console.log(this.state.posts);
-            console.log("THE ID IS "+this.state.posts.imdbID);
+            //console.log(this.state.posts);
+            //console.log("THE ID IS "+this.state.posts.imdbID);
         });
   }
 
   render(){
-    console.log(this.props.match.params.Title)
+    //console.log(this.props.match.params.Title)
 //    const Address = 'http://www.omdbapi.com/?i=tt'+this.props.match.params.Title+'&apikey=1cd359d4';
     const Address = 'https://img.omdbapi.com/?i='+this.state.posts.imdbID+'&h=600&apikey=1cd359d4'
+    //console.log("Picture id is "+this.state.posts.imdbID);
     return(
       <div className="Detail" >
         <h1>{this.state.posts.Title}</h1>

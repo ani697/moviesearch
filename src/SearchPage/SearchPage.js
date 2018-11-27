@@ -1,24 +1,13 @@
 import React, {Component} from 'react';
-
 import axios from 'axios';
-
 import './SearchPage.css';
 import MovieEngine from '../Components/MovieEngine/MovieEngine.js';
-
-
-
 import {Link} from 'react-router-dom';
-
-
-
 class SearchPage extends Component {
   state = {
     movie : null,
     flag: 0
   }
-
-
-
   handleChange(event){
     this.setState({movie:event.target.value});
   }
@@ -31,7 +20,6 @@ class SearchPage extends Component {
           {
               this.setState({flag:1});
               //console.log(response.data.Released)
-
           }
           else {
             this.setState({flag:2});
