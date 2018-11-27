@@ -6,7 +6,7 @@ import Links from './Links';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/lookformovie.herokuapp.com">
         <div className="App">
             <Links />
         </div>
