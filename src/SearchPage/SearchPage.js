@@ -31,7 +31,7 @@ class SearchPage extends Component {
     let post = null;
     if(this.state.flag===1)
     {
-      post = <div><label style={{color:'#cc9900' ,fontWeight: 'bold',fontSize:20}}>We Found The Movie </label><Link to={'/FoundPage/'+this.state.movie} target='_blank'><button style={{marginLeft:6}}>Let's Go</button></Link></div>;
+      post = <div><label style={{color:'#cc9900' ,fontWeight: 'bold',fontSize:20}}>We Found The Movie </label><Link to={`${process.env.PUBLIC_URL}/FoundPage/`+this.state.movie} target='_blank'><button style={{marginLeft:6}}>Let's Go</button></Link></div>;
     }
     else if(this.state.flag===2)
     {
