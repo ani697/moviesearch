@@ -6,7 +6,7 @@ import Links from './Links';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter basename={'/'}>
+      <BrowserRouter basename={''}>
         <div className="App">
             <Links />
         </div>
