@@ -7,8 +7,8 @@ class Links extends Component{
   render(){
     return(
       <div>
-        <Route  path={`${process.env.PUBLIC_URL}/`} exact  component={SearchPage} />
-        <Route  path={`${process.env.PUBLIC_URL}/FoundPage/:Title`} component={FoundPage} />
+        <Route  path='/' exact  component={SearchPage} />
+        <Route  path='/FoundPage/:Title' component={FoundPage} />
       </div>
     );
   }
